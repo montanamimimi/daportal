@@ -59,8 +59,9 @@ class DigitalAgensy {
 	public static function addMenus() {
 		register_nav_menus( array(
 			'primary' => 'Primary Navigation Menu',
-			'secondary' => 'Secondary Navigation Menu',
-			'bottom' => 'Bottom Navigation Menu'
+			'secondary1' => 'Secondary Navigation Menu 1',
+			'secondary2' => 'Secondary Navigation Menu 2',
+			'secondary3' => 'Secondary Navigation Menu 3'			
 		) );
 	}
 

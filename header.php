@@ -14,10 +14,10 @@
             
                     <?php 
                     wp_nav_menu(array(
-                        'theme_location' => 'primary', // Location identifier registered in the theme
-                        'menu_class' => 'menu',             // Class that will be added to the ul tag
-                        'container' => 'nav',               // Tag name for the container
-                        'container_class' => 'menu-container', // Class name for the container
+                        'theme_location' => 'primary', 
+                        'menu_class' => 'menu',             
+                        'container' => 'nav',               
+                        'container_class' => 'menu-container',
                     ));
                     ?>
 

@@ -52,6 +52,59 @@ class DotsGallery {
 
 /***/ }),
 
+/***/ "./src/modules/Navs.js":
+/*!*****************************!*\
+  !*** ./src/modules/Navs.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class Navs {
+  constructor() {
+    this.findNavs();
+  }
+  findNavs() {
+    const navs = document.querySelectorAll('.nav-wrapper');
+    const container = document.querySelector('.container');
+    const rect = container.getBoundingClientRect();
+    navs.forEach(nav => {
+      this.adjustNavStart(nav, rect);
+      const tabs = nav.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', e => {
+          this.adjustTabs(tab, nav, tabs[0]);
+        });
+      });
+    });
+  }
+  adjustNavStart(nav, rect) {
+    nav.style.marginLeft = rect.left + 'px';
+  }
+  adjustTabs(tab, nav, zero) {
+    const content = nav.querySelector('.nav-list');
+    const rect = tab.getBoundingClientRect();
+    const diff = window.innerWidth - rect.right - 140;
+    let padding = +content.style.left.replace('px', '');
+    if (diff < 0) {
+      content.style.left = padding + diff + 'px';
+    } else {
+      const leftTab = zero.getBoundingClientRect();
+      const moveRIght = leftTab.left + diff;
+      if (moveRIght < 0) {
+        content.style.left = leftTab.left + diff + 'px';
+      } else {
+        content.style.left = '0';
+      }
+    }
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navs);
+
+/***/ }),
+
 /***/ "./src/modules/Steps.js":
 /*!******************************!*\
   !*** ./src/modules/Steps.js ***!
@@ -179,11 +232,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.scss */ "./css/main.scss");
 /* harmony import */ var _modules_DotsGallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/DotsGallery */ "./src/modules/DotsGallery.js");
 /* harmony import */ var _modules_Steps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Steps */ "./src/modules/Steps.js");
+/* harmony import */ var _modules_Navs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/Navs */ "./src/modules/Navs.js");
+
 
 
 
 const dotsGallery = new _modules_DotsGallery__WEBPACK_IMPORTED_MODULE_1__["default"]();
 const steps = new _modules_Steps__WEBPACK_IMPORTED_MODULE_2__["default"]();
+const navs = new _modules_Navs__WEBPACK_IMPORTED_MODULE_3__["default"]();
 })();
 
 /******/ })()

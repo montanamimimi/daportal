@@ -23,9 +23,12 @@ $bannerMobUrl = wp_get_attachment_url($bannerMobId, 'large');
 </section>
 
 <section class="nav-tabs">
-    <div class="container">
-        <nav>
-            <ul>
+        <nav class="nav-wrapper">
+            <ul class="nav-list">
+                <li class="tab tab--middle tab--dark">Идея</li>
+                <li class="tab tab--middle tab--dark">Надём клиентов</li>
+                <li class="tab tab--middle tab--dark">Бренд-дизайн</li>
+                <li class="tab tab--middle tab--dark">Разработка</li>
                 <li class="tab tab--middle tab--dark">Идея</li>
                 <li class="tab tab--middle tab--dark">Надём клиентов</li>
                 <li class="tab tab--middle tab--dark">Бренд-дизайн</li>
@@ -37,7 +40,7 @@ $bannerMobUrl = wp_get_attachment_url($bannerMobId, 'large');
                 <li class="tab tab--middle tab--dark">Идея</li>
             </ul>
         </nav>
-    </div>
+    
 </section>
 
 <section class="web-headers">
@@ -165,8 +168,44 @@ $bannerMobUrl = wp_get_attachment_url($bannerMobId, 'large');
 
 <section class="look-more">
     <div class="container">
-        <div class="three-blocks-slider">
+    <div class="three-blocks-slider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="feature"  style="background-image:url(<?php echo get_theme_file_uri('/images/feature1.png'); ?>)">
 
+                        <div class="header">
+                            Разработка
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="feature" style="background-image:url(<?php echo get_theme_file_uri('/images/feature2.png'); ?>)">
+
+                        <div class="header">
+                            Стратегия
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="feature" style="background-image:url(<?php echo get_theme_file_uri('/images/feature3.png'); ?>)">
+
+                        <div class="header">
+                            Копирайтинг
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot dot--active"></div>
+                <div class="dot"></div>
+            </div>
         </div>
 
         <div class="all-items">
@@ -185,13 +224,153 @@ $bannerMobUrl = wp_get_attachment_url($bannerMobId, 'large');
 <section class="articles">
     <div class="container">
         <div class="three-blocks-slider">
+            <div class="slides">
+                <div class="slide">
+                    <div class="article">
+                        <div class="image">
+                            <img src="<?php echo get_theme_file_uri('/images/article3.png'); ?>" alt="">
+                        </div>
+                        <div class="header">
+                            Статья
+                        </div>
+                        <div class="description">
+                            Жанр журналистики, в котором автор ставит задачу проанализировать общественные ситуации, процессы, явления, прежде всего..
+                        </div>
+                    </div>
 
+                </div>
+                <div class="slide">
+                    <div class="article">
+                        <div class="image">
+                            <img src="<?php echo get_theme_file_uri('/images/article2.png'); ?>" alt="">
+                        </div>
+                        <div class="header">
+                            Статья
+                        </div>
+                        <div class="description">
+                            Жанр журналистики, в котором автор ставит задачу проанализировать общественные ситуации, процессы, явления, прежде всего..
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="article">
+                        <div class="image">
+                            <img src="<?php echo get_theme_file_uri('/images/article1.png'); ?>" alt="">
+                        </div>
+                        <div class="header">
+                            Статья
+                        </div>
+                        <div class="description">
+                            Жанр журналистики, в котором автор ставит задачу проанализировать общественные ситуации, процессы, явления, прежде всего..
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot dot--active"></div>
+                <div class="dot"></div>
+            </div>
         </div>
 
         <div class="all-items">
             <a href="#">Все статьи</a>
         </div>
     </div>
+</section>
+
+<section class="welcome">
+    
+        <div class="welcome-left">
+            <div class="head">
+
+                <div class="half-container">
+                    <h2>Давайте делать Продукты вместе</h2>
+                    <div class="downloads">
+                        <a class="download-item" style="padding-left: 88px;" href="<?php echo get_field('download_pdf', 'options'); ?>" download>
+                            <img src="<?php echo get_theme_file_uri('/images/book.png'); ?>" alt="Скачать" style="top: 10px;left: -24px;">
+                            <div class="text">
+                                Скачай презентацию
+                                <svg width="90" height="1" viewBox="0 0 90 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="-4.37114e-08" y1="0.5" x2="90" y2="0.499992" stroke="white"/>
+                                </svg>
+
+                            </div>
+                        </a>
+                        <div class="download-item">
+                            <img src="<?php echo get_theme_file_uri('/images/laptop.png'); ?>" alt="Заполнить" style="top: 10px;left:10px;">
+                            <div class="text">
+                                Заполни бриф
+                                <svg width="90" height="1" viewBox="0 0 90 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="-4.37114e-08" y1="0.5" x2="90" y2="0.499992" stroke="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="foot">
+                <div class="half-container">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="social-welcome">
+
+                        <div class="social-welcome__item">
+                            <div class="icon">
+                                <img src="<?php echo get_theme_file_uri('/images/welcome-email.png'); ?>" alt="Email">
+                            </div>
+                            <div class="text">E-mail</div>
+                        </div>
+                        <div class="social-welcome__item">
+                            <div class="icon">
+                                <img src="<?php echo get_theme_file_uri('/images/welcome-viber.png'); ?>" alt="Viber">
+                            </div>
+                            <div class="text">Viber</div>
+                        </div>
+                        <div class="social-welcome__item">
+                            <div class="icon">
+                                <img src="<?php echo get_theme_file_uri('/images/welcome-whatsapp.png'); ?>" alt="Whatsapp">
+                            </div>
+                            <div class="text">WhatsApp</div>
+                        </div>
+                        <div class="social-welcome__item">
+                            <div class="icon">
+                                <img src="<?php echo get_theme_file_uri('/images/welcome-telegram.png'); ?>" alt="Telegram">
+                            </div>
+                            <div class="text">Telegram</div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="welcome-right">
+            <div class="head">
+                <div class="half-container">
+                    <img src="<?php echo get_theme_file_uri('/images/robot2.png'); ?>" alt="Заполнить" style="top: 10px;left:10px;">
+                </div>                
+            </div>
+            <div class="foot">
+                <div class="half-container">
+                    <div class="meet">
+                        <h3>  — Познакомимся?</h3>
+                        <div class="robot">
+                            <div class="img-container">
+                                <img src="<?php echo get_theme_file_uri('/images/robot3.png'); ?>" alt="">
+                            </div>
+                            <div class="">История начинается здесь...</div>
+                        </div>
+                    </div>
+                    <div id="start" class="meet-btn">
+                        <div class="btn btn--middle btn--violet">
+                            Начать
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
 </section>
 
 <?php get_footer(); ?>

@@ -1,0 +1,84 @@
+footer {
+    padding-top: 120px;
+    color: white;
+
+    .menus {
+        padding-left: 40%;
+        display: flex;
+        padding-bottom: 80px;
+
+        .menu {
+
+            margin-right: 60px;
+
+            &-header {
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+
+            .menu-item {
+                margin-bottom: 20px;
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+
+    .social {
+        background-color: $lightBackground;
+        padding: 60px 140px 140px 140px;
+
+        &-header {
+            font-weight: 600;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+
+        &-items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            .icon {
+                background-color: $social;
+                border-radius: 10px;
+                margin-right: 12px;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .inspire {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .copy {
+            margin-top: 24px;
+            font-size: 30px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid white;
+            font-weight: 300;
+        }
+    }
+}
