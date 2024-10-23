@@ -1,0 +1,18 @@
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/structure';
+@import 'base/buttons';
+
+@import 'elements/header';
+@import 'elements/footer';
+@import 'elements/banner';
+@import 'elements/tabs';
+@import 'elements/steps';
+@import 'elements/gallery';
+
+@import 'pages/frontpage';
+
+body {
+    background-color: $background;
+}

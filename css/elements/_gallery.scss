@@ -1,0 +1,49 @@
+.gallery-dots {
+    
+    .image-container {
+        width: 800px;
+        height: 490px;
+        position: relative;
+
+
+        .image-item {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+
+            &--hidden {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
+
+            img {
+                border-radius: 16px;
+            }
+            
+        }
+    }
+
+    .dots-container {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        cursor: pointer;
+
+        .dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #ffffff30;
+
+            &--active {
+                background-color: #fff;
+            }
+        }
+        
+    }
+
+}

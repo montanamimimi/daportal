@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn--large {
+    font-size: 35px;
+    height: 80px;
+    padding: 20px 110px;
+    border-radius: 84px;
+}
+
+.btn--middle {
+    font-size: 20px;
+    height: 48px;
+    padding: 20px 70px;
+    border-radius: 84px;
+}
+
+.btn--violet {
+    background-color: $violet;
+    color: white;
+}

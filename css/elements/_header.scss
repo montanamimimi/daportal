@@ -1,0 +1,21 @@
+.header-web {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    color: $text;
+    font-weight: 500;
+    font-size: 20px;
+
+    .menu-container {
+        margin-left: 120px;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-right: 24px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.nav-tabs {
+    margin-top: 54px;
+
+    nav {
+
+      //  overflow-x: auto;
+        white-space: nowrap; 
+
+        ul {
+            display: flex;
+            align-items: center;
+            // list-style-type: none;  
+            gap: 12px;
+        }
+    }
+}
+
+.web-headers {
+    margin-top: 120px;
+    color: white;
+    display: flex;
+    width: 100%;
+
+    .container {
+        justify-content: space-between;
+    }
+
+    h3.header--short {
+        width: 40%;
+    }
+
+    h3.header--long {
+        width: 54%;
+    }
+}
+
+.icons {
+    background-color: gray;
+}
+
+.all-items {
+    display: flex;
+    justify-content: center;
+
+    a {       
+        padding-right: 40px;
+        font-size: 28px;
+        color: white;
+        background-image: url('data:image/svg+xml,<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_1_635)"><path d="M14 34.5L34 14.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 14.5H34V34.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1_635"><rect width="48" height="48" fill="white" transform="translate(0 0.5)"/></clipPath></defs></svg>');
+        background-repeat: no-repeat;
+        background-position: right -12px center;
+        border-bottom: 1px solid white;
+        padding-bottom: 8px;
+    }
+}

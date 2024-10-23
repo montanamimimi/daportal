@@ -1,0 +1,447 @@
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./css/main.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./css/main.scss (1) ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/***
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 100%; /* Full width on small devices */
+  max-width: 1780px; /* Maximum width for larger screens */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  padding-left: 64px; /* Padding for small screens */
+  padding-right: 64px; /* Padding for small screens */
+  box-sizing: border-box;
+}
+
+.container-flex {
+  display: flex;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 62px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.bald {
+  font-weight: 600;
+}
+
+.mt-1 {
+  margin-top: 12px;
+}
+
+.mt-4 {
+  margin-top: 48px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn--large {
+  font-size: 35px;
+  height: 80px;
+  padding: 20px 110px;
+  border-radius: 84px;
+}
+
+.btn--middle {
+  font-size: 20px;
+  height: 48px;
+  padding: 20px 70px;
+  border-radius: 84px;
+}
+
+.btn--violet {
+  background-color: #5415E4;
+  color: white;
+}
+
+.header-web {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  color: #B3B3B3;
+  font-weight: 500;
+  font-size: 20px;
+}
+.header-web .menu-container {
+  margin-left: 120px;
+}
+.header-web .menu-container ul {
+  display: flex;
+}
+.header-web .menu-container li {
+  margin-right: 24px;
+}
+
+.mainpage-banner {
+  background-color: #191919;
+  width: 100%;
+  height: 534px;
+  background-position: right -400px bottom -300px;
+  background-repeat: no-repeat;
+}
+.mainpage-banner .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: left top -520px;
+  background-repeat: no-repeat;
+}
+.mainpage-banner .container h1 {
+  color: white;
+}
+
+.container-banner {
+  margin-top: 64px;
+}
+.container-banner .banner {
+  width: 100%;
+  height: 590px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+.container-banner .banner__description {
+  width: 48%;
+  color: white;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-banner .banner__description p {
+  color: white;
+  font-weight: 300;
+}
+.container-banner .banner__description--small {
+  color: white;
+  width: 500px;
+  margin-top: 230px;
+  margin-left: 220px;
+}
+.container-banner .banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-banner .banner .banner-social {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin-top: 48px;
+}
+.container-banner .banner .banner-social__item {
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  align-items: center;
+  justify-content: end;
+}
+.container-banner .banner .banner-social__item p {
+  color: white;
+}
+.container-banner .banner .banner-social__item img {
+  margin-bottom: 4px;
+}
+.container-banner .banner .banner-social__item span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tab--middle {
+  height: 62px;
+  padding: 12px 32px;
+  font-size: 20px;
+  border-radius: 100px;
+}
+
+.tab--dark {
+  color: white;
+  border: 1px solid #6F6F6F;
+}
+
+.steps {
+  margin-top: 120px;
+  color: white;
+}
+.steps .step {
+  border-left: 1px solid white;
+  padding: 32px;
+  display: flex;
+}
+.steps .step .number {
+  color: #A7A7A7;
+  font-size: 24px;
+  width: 12%;
+}
+.steps .step .number--long {
+  width: 30%;
+}
+.steps .step .images {
+  width: 50%;
+  color: #F5F5F5;
+  margin-top: -12px;
+}
+.steps .step .images h3 {
+  margin-bottom: 24px;
+}
+.steps .step .images--padding {
+  padding-right: 200px;
+}
+.steps .step .description {
+  width: 38%;
+  color: #A7A7A7;
+}
+.steps .step .description--padding {
+  padding: 72px 0 0 84px;
+}
+.steps .step.border-bald {
+  border-left: 3px solid white;
+}
+
+.gallery-dots .image-container {
+  width: 800px;
+  height: 490px;
+  position: relative;
+}
+.gallery-dots .image-container .image-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.gallery-dots .image-container .image-item--hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.gallery-dots .image-container .image-item img {
+  border-radius: 16px;
+}
+.gallery-dots .dots-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.gallery-dots .dots-container .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1882352941);
+}
+.gallery-dots .dots-container .dot--active {
+  background-color: #fff;
+}
+
+.nav-tabs {
+  margin-top: 54px;
+}
+.nav-tabs nav {
+  white-space: nowrap;
+}
+.nav-tabs nav ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.web-headers {
+  margin-top: 120px;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+.web-headers .container {
+  justify-content: space-between;
+}
+.web-headers h3.header--short {
+  width: 40%;
+}
+.web-headers h3.header--long {
+  width: 54%;
+}
+
+.icons {
+  background-color: gray;
+}
+
+.all-items {
+  display: flex;
+  justify-content: center;
+}
+.all-items a {
+  padding-right: 40px;
+  font-size: 28px;
+  color: white;
+  background-image: url("data:image/svg+xml,<svg width=\"48\" height=\"49\" viewBox=\"0 0 48 49\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url%28%23clip0_1_635%29\"><path d=\"M14 34.5L34 14.5\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14 14.5H34V34.5\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><defs><clipPath id=\"clip0_1_635\"><rect width=\"48\" height=\"48\" fill=\"white\" transform=\"translate%280 0.5%29\"/></clipPath></defs></svg>");
+  background-repeat: no-repeat;
+  background-position: right -12px center;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+
+body {
+  background-color: #131112;
+}
+
+/*# sourceMappingURL=index.css.map*/

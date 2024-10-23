@@ -1,0 +1,51 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 100%;                /* Full width on small devices */
+    max-width: 1780px;           /* Maximum width for larger screens */
+    margin-left: auto;           /* Center horizontally */
+    margin-right: auto;          /* Center horizontally */
+    padding-left: 64px;          /* Padding for small screens */
+    padding-right: 64px;         /* Padding for small screens */
+    box-sizing: border-box;
+}
+
+.container-flex {
+    display: flex;
+}
+
+h1 { 
+    color: white;
+    font-size: 100px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 62px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.bald {
+    font-weight: 600;
+}
+
+.mt-1 {
+    margin-top: 12px;
+}
+
+.mt-4 {
+    margin-top: 48px;
+}

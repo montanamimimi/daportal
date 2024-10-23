@@ -1,0 +1,50 @@
+.steps {
+    margin-top: 120px;
+    color: white;
+
+
+
+    .step {        
+        border-left: 1px solid white;
+        padding: 32px;
+        display: flex;
+
+        .number {
+            color: $semiLight;
+            font-size: 24px;
+            width: 12%;
+
+            &--long {
+                width: 30%;
+            }
+        }
+
+        .images {
+            width: 50%;
+            color: $light;
+            margin-top: -12px;
+
+            h3  {
+                margin-bottom: 24px;
+            }
+
+            &--padding {
+                padding-right: 200px;
+            }
+        }
+
+        .description {
+            width: 38%;
+            color: $semiLight;
+
+
+            &--padding {
+                padding: 72px 0 0 84px;
+            }
+        }   
+    }
+
+    .step.border-bald {
+        border-left: 3px solid white;
+    }
+}
