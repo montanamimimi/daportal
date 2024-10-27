@@ -197,7 +197,7 @@ $bannerRotateUrl = wp_get_attachment_url($bannerRotateId, 'large');
 
 <section class="container-banner">
     <div class="container">
-        <div class="banner banner-laptop"
+        <div class="banner"
             style="background-image:url(<?php echo get_theme_file_uri('/images/banner_bgc_1.png'); ?>); background-size:cover"
         >
             <div class="banner__description">

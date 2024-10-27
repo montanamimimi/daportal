@@ -82,3 +82,150 @@ footer {
         }
     }
 }
+
+@media (max-width: 1800px) {
+
+    footer  {
+        .social {
+
+            padding: 50px 110px 110px 110px;
+    
+            &-header {
+    
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+    
+        }
+    }
+
+}
+
+@media (max-width: 1600px) {
+
+    footer  {
+
+        .menus {
+            width: 100%;
+            padding-left: 20%;
+        }
+        .social {
+
+            padding: 40px 80px 80px 80px;
+    
+            &-header {
+    
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            &-items {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            &-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+    
+                .icon {
+
+                    margin-bottom: 12px;
+                    margin-right: 0;
+
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1400px) {
+
+    footer  {
+
+        .menus {
+   
+            padding-left: 120px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    footer  {
+        .social {
+
+            padding: 32px;
+
+            .social-header {
+                text-align: center;
+            }
+
+            .social-items {
+                justify-content: center;
+                gap: 32px;
+            }
+
+            &-item {
+
+                .icon {
+                    padding: 8px;
+                    width: 60px;
+                    height: 60px;
+                }
+                .text {
+                    font-size: 10px;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    footer  {
+
+        .menus {
+   
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+        }
+        .inspire {
+            padding: 40px;
+
+    
+            .copy {
+                margin-top: 12px;
+                font-size: 18px;
+                padding-bottom: 12px;
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    footer  {
+
+        .social {
+            .social-items{
+                flex-wrap: wrap;
+            }
+            
+        }
+    }
+
+}

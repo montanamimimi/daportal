@@ -12,7 +12,18 @@
     border-radius: 100px;
 }
 
+
+
 .tab--dark {
     color: white;
     border: 1px solid $borderGray;
+}
+
+@media (max-width: 900px) {
+    .tab--middle {
+        height: 44px;
+        padding: 8px 18px;
+        font-size: 15px;
+        border-radius: 100px;
+    }
 }

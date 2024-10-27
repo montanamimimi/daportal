@@ -48,3 +48,58 @@
         border-left: 3px solid white;
     }
 }
+
+@media (max-width: 900px) {
+    .steps {
+        margin-top: 32px;  
+        
+        .mob-only {
+            margin-bottom: 24px;
+            h2 {
+                font-weight: 500;
+            }
+
+            .btn--large.mt-4 {
+                width: 100% !important;
+                height: 40px;
+                font-size: 16px;
+            }
+
+
+        }
+    
+        .images--padding {
+            padding-right: 0 !important;
+        }
+        .step {        
+            border-left: 1px solid white;
+            padding: 32px;
+            display: flex;
+    
+            .number {
+   
+                font-size: 18px;
+                margin-right: 20px;
+    
+                &--long {
+                    width: 30%;
+                }
+            }
+    
+            .images {
+                width: 100%;
+                margin-top: -4px;
+    
+                h3  {
+                    font-size: 20px;
+                }
+
+            }
+    
+            .description {
+                display: none;
+            }   
+        }
+
+    }
+}

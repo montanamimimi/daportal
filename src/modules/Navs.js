@@ -8,7 +8,6 @@ class Navs {
         const container = document.querySelector('.container')
         const rect = container.getBoundingClientRect();
         
-
         navs.forEach(nav => {
             this.adjustNavStart(nav, rect);
 
@@ -23,30 +22,58 @@ class Navs {
         })
     }
     adjustNavStart(nav, rect) {
-        nav.style.marginLeft = rect.left + 'px';
+
+        if (nav.dataset.direction == '1') {
+            nav.style.right = rect.left + 'px';
+        } else {
+            nav.style.left = rect.left + 'px';
+        }
+
     }
     adjustTabs(tab, nav, zero) {
         const content = nav.querySelector('.nav-list');   
         const rect = tab.getBoundingClientRect()
-        const diff = window.innerWidth - rect.right - 140;
-        let padding = +content.style.left.replace('px', '');
+
        
+        if (nav.dataset.direction == '1') {
+            const diff = rect.left - 140;
+            let padding = +content.style.right.replace('px', '');
 
-        if (diff < 0) {
-            content.style.left = padding + diff + 'px'  
-        } else {
-
-            const leftTab = zero.getBoundingClientRect()
-            const moveRIght = leftTab.left + diff;
-
-            if (moveRIght < 0) {
-                content.style.left = leftTab.left + diff + 'px'  
+            if (diff < 0) {
+                content.style.right = padding + diff + 'px'  
             } else {
-                content.style.left = '0';
+                const moveRIght = padding + diff;
+    
+                if (moveRIght < 0) {
+                    content.style.right = moveRIght + 'px'  
+                } else {
+                    content.style.right = '0';
+                }
+                
+             
             }
-            
-         
+        } else {
+            const diff = window.innerWidth - rect.right - 140;
+            let padding = +content.style.left.replace('px', '');
+
+            if (diff < 0) {
+                content.style.left = padding + diff + 'px'  
+            } else {
+    
+                const leftTab = zero.getBoundingClientRect()
+                const moveRIght = leftTab.left + diff;
+    
+                if (moveRIght < 0) {
+                    content.style.left = leftTab.left + diff + 'px'  
+                } else {
+                    content.style.left = '0';
+                }
+                
+             
+            }
         }
+
+
 
     }
 

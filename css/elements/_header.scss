@@ -1,3 +1,7 @@
+.header-mob {
+    display: none;
+}
+
 .header-web {
     display: flex;
     justify-content: space-between;
@@ -18,4 +22,51 @@
             margin-right: 24px;
         }
     }
+}
+
+@media (max-width: 900px) {
+
+    .header-web {
+        display: none;
+    }
+
+    .header-mob {
+        display: flex;
+        padding: 18px 0;
+        justify-content: space-between;
+        align-items: center;
+
+        .burger {
+            width: 27px;
+            height: 27px;
+            cursor: pointer;
+        }
+
+        .burder-list {
+            margin-top: 11px;
+            display: none;
+            padding: 18px 0;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vh;
+            height: 100vh;
+            background-color: $background;
+            z-index: 12;
+
+            .menu-container {
+                color: white;
+                margin-top: 24px;
+
+                ul  {
+                    li {
+                        padding: 6px 0;                        
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -49,3 +49,45 @@ p {
 .mt-4 {
     margin-top: 48px;
 }
+
+.mob-only {
+    display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 24px;          
+        padding-right: 24px;       
+    }
+
+    h1 { 
+        color: white;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    
+    h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 200;    
+        line-height: 32px;    
+    }
+    
+}
+
+@media (max-width: 900px) {
+    
+    .mob-only {
+        display: block;
+    }
+
+    .web-only {
+        display: none !important;
+    }
+}
